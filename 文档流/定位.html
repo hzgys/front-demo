@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            /*相对定位 position :relative; */
+            /* 绝对定位 每设置一个绝对定位就会多一层 */
+            /* 有父级定位 盒子就会根据父级定位进行定位 只有绝对定位和相对定位可以 */
+            /* position :absolute; */
+            /* 固定定位 只面向顶层文档 */
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            z-index: 100;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            position: absolute;
+            margin: 100px;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+    <div class="box2"></div>
+    
+</body>
+</html>
